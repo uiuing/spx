@@ -1,0 +1,19 @@
+{
+  "costumes": [
+    {
+      "bitmapResolution": 2,
+      "name": "medicine",
+      "path": "medicine.png",
+      "x": 50,
+      "y": 60
+    }
+  ],
+  "currentCostumeIndex": 0,
+  "heading": 50,
+  "isDraggable": false,
+  "rotationStyle": "normal",
+  "size": 0.24,
+  "visible": true,
+  "x": -131,
+  "y": -161
+}

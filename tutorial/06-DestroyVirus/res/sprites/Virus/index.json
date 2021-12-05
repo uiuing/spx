@@ -1,0 +1,57 @@
+{
+  "costumes": [
+    {
+      "bitmapResolution": 1,
+      "name": "normal",
+      "path": "virus.png",
+      "x": 70,
+      "y": 50
+    },
+    {
+      "bitmapResolution": 2,
+      "name": "die-0",
+      "path": "disappearVirus0.png",
+      "x": 65,
+      "y": 48
+    },
+    {
+      "bitmapResolution": 2,
+      "name": "die-1",
+      "path": "disappearVirus1.png",
+      "x": 70,
+      "y": 50
+    },
+    {
+      "bitmapResolution": 2,
+      "name": "die-2",
+      "path": "disappearVirus2.png",
+      "x": 68,
+      "y": 50
+    },
+    {
+      "bitmapResolution": 2,
+      "name": "die-3",
+      "path": "disappearVirus3.png",
+      "x": 44,
+      "y": 45
+    }
+  ],
+  "currentCostumeIndex": 0,
+  "fAnimations": {
+    "die": {
+      "onStart":{
+        "play": "hit"
+      },
+      "duration": 0.1,
+      "from": "die-0",
+      "to": "die-3"
+    }
+  },
+  "heading": 90,
+  "isDraggable": false,
+  "rotationStyle": "normal",
+  "size": 0.65,
+  "visible": false,
+  "x": -58,
+  "y": -179
+}
