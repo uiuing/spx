@@ -1,0 +1,28 @@
+{
+  "costumes": [
+    {
+      "bitmapResolution": 1,
+      "name": "backdrop1",
+      "path": "backdrop.png",
+      "x": 240,
+      "y": 180
+    }
+  ],
+  "currentCostumeIndex": 0,
+  "zorder": [
+    "Virus",
+    "MyMedicine",
+    {
+      "type": "stageMonitor",
+      "target": "",
+      "val": "getVar:cumulativeTime",
+      "color": 15629590,
+      "label": "Time",
+      "mode": 1,
+      "x": 5,
+      "y": 5,
+      "visible": true
+    }
+  ]
+  
+}

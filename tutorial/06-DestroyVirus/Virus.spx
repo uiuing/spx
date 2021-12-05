@@ -1,15 +1,27 @@
 onStart => {
+	virusGenerationTime = 1
 	for {
-		wait 1.2
+		wait virusGenerationTime 
 		clone
+	}
+}
+onStart => {
+	virusFallRate = 0.05
+	for {
+		wait 1
+		cumulativeTime = cumulativeTime+1
+		if cumulativeTime % 10 == 0{
+			virusGenerationTime = rand(0.3,1.5)
+			virusFallRate = rand(0.0003,0.1)
+		}
 	}
 }
 
 onCloned => {
-	setXYpos rand(-240, 240), 440
+	setXYpos rand(-240, 240), rand(290,440)
 	show
 	for {
-		wait rand(0.0004,0.05)
+		wait virusFallRate 
 		changeYpos -1
 		if touching(EdgeBottom) {
 			destroy

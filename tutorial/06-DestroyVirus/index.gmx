@@ -1,6 +1,11 @@
 var (
 	MyMedicine MyMedicine
 	Virus Virus
-	hit    Sound
+	hit   Sound
+	bgm   Sound
+	cumulativeTime int
+	virusGenerationTime float64
+	virusFallRate float64
 )
+
 run "res", {Title: "Destroy Virus"}
