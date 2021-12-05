@@ -1,0 +1,22 @@
+onStart => {
+	for {
+		wait 1.2
+		clone
+	}
+}
+
+onCloned => {
+	setXYpos rand(-240, 240), 440
+	show
+	for {
+		wait rand(0.0004,0.05)
+		changeYpos -1
+		if touching(EdgeBottom) {
+			destroy
+		}
+	}
+}
+
+onClick => {
+	die
+}

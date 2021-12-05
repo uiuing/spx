@@ -1,0 +1,7 @@
+onStart => {
+	
+	for {
+		wait 0.001
+		setXYpos mouseX, mouseY
+	}
+}

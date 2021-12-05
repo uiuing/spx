@@ -1,0 +1,6 @@
+var (
+	MyMedicine MyMedicine
+	Virus Virus
+	hit    Sound
+)
+run "res", {Title: "Destroy Virus"}
